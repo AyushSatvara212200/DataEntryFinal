@@ -137,9 +137,9 @@ export const Register = () => {
                                         <td style={{ width: "150px", textAlign: "center", fontFamily: "monospace", fontSize: "15px" }}>{val.quantity}</td>
                                         <td style={{ width: "270px", textAlign: "center", fontFamily: "monospace", fontSize: "15px" }}>{val.customerName}</td>
                                         <td style={{ width: "360px", textAlign: "center", fontFamily: "monospace", fontSize: "15px" }}>{val.remarks}</td>
-                                        <td className='d-flex justify-content-around'>
+                                        <td >
                                             <Button variant="success"><EditIcon /></Button>
-                                            <Button variant="danger" onClick={() => { deletePro(val._id); }}><DeleteIcon /></Button>
+                                            <Button variant="danger" onClick={() => { deletePro(val._id); }} style={{ marginLeft: "10px" }}><DeleteIcon /></Button>
                                         </td>
                                     </tr>
                                 </tbody>
