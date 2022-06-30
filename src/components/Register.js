@@ -38,7 +38,7 @@ export const Register = () => {
     const deletePro = (id) => {
         Axios.delete(`https://data-entry-e.herokuapp.com/delete/${id}`).then(() => {
             setList(list.filter((val) => {
-                return val._id != id;
+                return val._id !== id;
             }))
         })
     }
